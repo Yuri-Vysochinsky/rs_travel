@@ -129,29 +129,29 @@ body {
     cursor: pointer;
 }
 
-/*
 .section-title-wrap {
-    width: 112px;
-    background-color: #000000;
+    display: flex;
+    justify-content: center;
 }
-*/
 
 .section-title {
     /* Это позиционирование, пока просто смотри - НАЧАЛО*/
     position: relative;
-    z-index: 2;
     /* Это позиционирование, пока просто смотри - КОНЕЦ*/
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: 'Merriweather', serif;
     font-weight: 700;
     font-size: 40px;
     line-height: 80px;
     color: #BDAE82;
-
     text-align: center;
     margin-top: 100px;
     margin-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #000000;
+
 }
 
 
@@ -162,12 +162,14 @@ body {
     background-image: url(../img/section-title-line.svg);
     width: 700px;
     height: 2px;
+    z-index: -1;
 
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
+  
+
 }
 /*Дебри КОНЕЦ*/
 
